@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drishyam Payment App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Drishyam Payment App</h1>
+        <div id="location-status"></div>
+        
+        <form id="payment-form">
+            <label for="recipient-name">Recipient Name</label>
+            <input type="text" id="recipient-name" placeholder="Enter recipient name">
+            <br>
+
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <br>
+
+            <label for="card-type">Card Type</label>
+            <select id="card-type">
+                <option value="credit">Credit</option>
+                <option value="debit">Debit</option>
+            </select>
+            <br>
+
+            <button type="submit">Pay Now</button>
+        </form>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
